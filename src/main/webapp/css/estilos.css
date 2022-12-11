@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root
 {
@@ -6,6 +6,7 @@
     --main-dark-color: #dd590d;
     --main-light-color: #f26716b7;
     --main-lightest-color: #f2671634;
+    --lightest-gray-color: #eee; 
 }
 
 *
@@ -18,14 +19,20 @@
 body 
 {
     background: #fff;
-    font-family: 'Manrope', sans-serif;
-    padding-bottom: 2rem;
+    line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
 }
 
 h1
 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
+}
+
+h4
+{
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 p 
@@ -40,7 +47,6 @@ p
     position: fixed;
     z-index:2;
     background: #fff;
-    border-bottom: 1px solid #dcdcdc;
 }
 
 ul, #brand, .menu
@@ -49,13 +55,12 @@ ul, #brand, .menu
     align-items: center;
 }
 
-ul 
+#header ul 
 {
-    width: 100%;
     justify-content: center;
     list-style:none;
     background: #fff;
-    border-bottom: 1px solid #dcdcdc;
+    border-bottom: 1px solid var(--lightest-gray-color);
 }
 
 .toggle-menu
@@ -71,13 +76,13 @@ a
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
+    color: black;
 }
 
 .nav li a 
 {
     padding: 1rem 1.5rem;
     display:block;
-    color: black;
 }
 
 .nav li a:hover

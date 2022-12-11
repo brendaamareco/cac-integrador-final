@@ -1,0 +1,59 @@
+@import "estilos.css";
+
+.footer
+{
+    margin-top: 2rem;
+    padding: 4rem 2rem;
+    border-top: 1px solid var(--lightest-gray-color);
+    background-color: var(--main-color);
+}
+
+.footer-menu h4
+{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.footer-menu
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-col, .footer-col ul
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col ul 
+{
+    padding-top: 1rem;
+    align-items: flex-start;
+}
+
+.footer-col li
+{
+    list-style: none;
+    padding-top: 1rem;
+}
+
+.footer-col a
+{
+    margin-bottom: 1rem;
+    font-weight: 300;
+    color: white;
+}
+
+.footer .social-links
+{
+    padding-top: 2rem;
+}
+
+.footer .social-links a
+{
+    padding: 0.8rem 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
