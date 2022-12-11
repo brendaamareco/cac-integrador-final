@@ -1,5 +1,7 @@
-@import "estilos.css";
-@import "footer.css";
+
+@import "commons/commons.css";
+@import "commons/header.css";
+@import "commons/footer.css";
 
 .portada
 {
@@ -30,9 +32,6 @@
 
 .portada .texto
 {
-    z-index: 1;
-    position: relative;
-    margin: 20px 30px 0px 30px;
     text-align: justify;
 }
 
@@ -47,7 +46,6 @@
     width: 1rem;
     padding-right: 4px;
 }
-
 
 .portada .btn-group
 {

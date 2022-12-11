@@ -35,87 +35,12 @@ h4
     font-weight: 500;
 }
 
-p 
-{
-    margin-top: 15px;
-}
-
-#header
-{
-    margin: 0px;
-    width: 100%;
-    position: fixed;
-    z-index:2;
-    background: #fff;
-}
-
-ul, #brand, .menu
-{
-    display: flex;
-    align-items: center;
-}
-
-#header ul 
-{
-    justify-content: center;
-    list-style:none;
-    background: #fff;
-    border-bottom: 1px solid var(--lightest-gray-color);
-}
-
-.toggle-menu
-{
-    border: 1px solid var(--main-lightest-color);
-    border-radius: 0 0 4px 4px;
-    border-top: 3px solid var(--main-light-color);
-    width: auto;
-}
-
 a
 {
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
     color: black;
-}
-
-.nav li a 
-{
-    padding: 1rem 1.5rem;
-    display:block;
-}
-
-.nav li a:hover
-{
-    color: #a9a9a9;
-}
-
-.nav > li 
-{
-    float: left;
-}
-
-.nav li ul
-{
-    display: none;
-    position:absolute;
-    min-width: 140px;
-}
-
-.nav li:hover > ul
-{ 
-    display:block;
-}
-
-.nav li ul li 
-{
-    position: relative;
-}
-
-.nav li ul li ul 
-{ 
-    right: -140px;
-    top: 0px;
 }
 
 button
