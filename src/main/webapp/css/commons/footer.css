@@ -2,22 +2,24 @@
 .footer
 {
     margin-top: 2rem;
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 1rem 2rem;
     border-top: 1px solid var(--lightest-gray-color);
-    background-color: var(--main-color);
+    background-color: var(--dark-gray-color);
 }
 
 .footer-menu h4
 {
     color: white;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid var(--main-color);
 }
 
 .footer-menu
 {
     width: 100%;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: space-evenly;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.301);
 }
 
 .footer-col, .footer-col ul
@@ -42,7 +44,14 @@
 {
     margin-bottom: 1rem;
     font-weight: 300;
-    color: white;
+    color: #bbb;
+    transition: all 0.3s ease;
+}
+
+.footer-col a:hover
+{
+    color: #fff;
+    padding-left: 4px;
 }
 
 .footer .social-links
@@ -53,6 +62,23 @@
 .footer .social-links a
 {
     padding: 0.8rem 1rem;
-    font-size: 1.5rem;
     color: white;
+    height: 40px;
+	width: 40px;
+    border-radius: 50%;
+	background-color: #ffffff33;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover
+{
+	color: #24262b;
+	background-color: var(--main-color);
+}
+
+.footer .author
+{
+    text-align: center;
+    margin: 2rem auto;
+    color: #bbb;
 }
