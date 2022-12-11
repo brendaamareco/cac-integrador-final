@@ -4,6 +4,8 @@
 {
     --main-color: #F26716;
     --main-dark-color: #dd590d;
+    --main-light-color: #f26716b7;
+    --main-lightest-color: #f2671634;
 }
 
 *
@@ -54,6 +56,14 @@ ul
     list-style:none;
     background: #fff;
     border-bottom: 1px solid #dcdcdc;
+}
+
+.toggle-menu
+{
+    border: 1px solid var(--main-lightest-color);
+    border-radius: 0 0 4px 4px;
+    border-top: 3px solid var(--main-light-color);
+    width: auto;
 }
 
 a
