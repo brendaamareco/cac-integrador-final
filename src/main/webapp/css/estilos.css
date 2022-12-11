@@ -1,16 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&display=swap');
 
 
+:root
+{
+    --main-color: #F26716;
+    --main-dark-color: #dd590d;
+}
+
 *
 {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body 
 {
     background: #fff;
     font-family: 'Manrope', sans-serif;
+    padding-bottom: 2rem;
+}
+
+h1
+{
+    font-size: 4rem;
+    font-weight: 600;
 }
 
 p 
@@ -43,13 +57,17 @@ ul
     border-bottom: 1px solid #dcdcdc;
 }
 
-.nav li a 
+a
 {
     text-decoration: none;
-    padding: 1rem 2rem;
-    display:block;
-    font-size: 0.9rem;
     font-weight: 600;
+    font-size: 1rem;
+}
+
+.nav li a 
+{
+    padding: 1rem 1.5rem;
+    display:block;
     color: black;
 }
 
@@ -80,19 +98,36 @@ ul
     position: relative;
 }
 
-
 .nav li ul li ul 
 { 
     right: -140px;
     top: 0px;
 }
 
+.portada
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 4rem;
+}
+
+.portada .texto
+{
+    flex-shrink: 2;
+    font-weight: 600;
+}
 
 .imagen
 {
-    z-index:1;
-    position: relative;
-    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen img
+{
+    width: 100%;
 }
 
 .texto
@@ -102,4 +137,57 @@ ul
     margin: 20px 30px 0px 30px;
     text-align: justify;
 
+}
+
+.texto a
+{
+    padding-right: 1.4rem;
+    color: var(--main-color);
+}
+
+.texto img
+{
+    width: 1rem;
+    padding-right: 4px;
+}
+
+
+.btn-group
+{
+    margin: 1.3rem 0;
+    display: flex;
+    gap: 1.2rem;
+}
+
+button
+{
+    width: 100%;
+    margin: 0px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: all 80ms ease-in-out 0s;
+    padding: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+}
+
+#btn-consultar-pedido
+{
+    background-color: white;
+    color: var(--main-color);
+    border: 3px solid var(--main-color);
+}
+
+#btn-ingresar-pedido:hover
+{
+    background-color: var(--main-dark-color);
+}
+
+#btn-consultar-pedido:hover
+{
+    color: var(--main-dark-color);
+    border-color: var(--main-dark-color);
 }
