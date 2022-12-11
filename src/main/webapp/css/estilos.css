@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&display=swap');
 
-
 :root
 {
     --main-color: #F26716;
@@ -104,61 +103,6 @@ a
     top: 0px;
 }
 
-.portada
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8rem 4rem;
-}
-
-.portada .texto
-{
-    flex-shrink: 2;
-    font-weight: 600;
-}
-
-.imagen
-{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.imagen img
-{
-    width: 100%;
-}
-
-.texto
-{
-    z-index: 1;
-    position: relative;
-    margin: 20px 30px 0px 30px;
-    text-align: justify;
-
-}
-
-.texto a
-{
-    padding-right: 1.4rem;
-    color: var(--main-color);
-}
-
-.texto img
-{
-    width: 1rem;
-    padding-right: 4px;
-}
-
-
-.btn-group
-{
-    margin: 1.3rem 0;
-    display: flex;
-    gap: 1.2rem;
-}
-
 button
 {
     width: 100%;
@@ -172,22 +116,4 @@ button
     font-weight: 600;
     border: 1px solid var(--main-color);
     background-color: var(--main-color);
-}
-
-#btn-consultar-pedido
-{
-    background-color: white;
-    color: var(--main-color);
-    border: 3px solid var(--main-color);
-}
-
-#btn-ingresar-pedido:hover
-{
-    background-color: var(--main-dark-color);
-}
-
-#btn-consultar-pedido:hover
-{
-    color: var(--main-dark-color);
-    border-color: var(--main-dark-color);
 }
