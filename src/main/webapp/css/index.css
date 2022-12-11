@@ -17,10 +17,16 @@
     flex-direction: column;
 }
 
+.portada h1
+{
+    margin: 1.5rem auto;
+}
+
 .portada .texto
 {
     flex-shrink: 2;
     font-weight: 600;
+    margin: 2rem 0;
 }
 
 .portada .imagen
