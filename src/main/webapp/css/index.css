@@ -12,6 +12,11 @@
     padding: 8rem 1rem 4rem 1rem;
 }
 
+.about .portada
+{
+    flex-direction: column;
+}
+
 .portada .texto
 {
     flex-shrink: 2;
@@ -72,11 +77,33 @@
     border-color: var(--main-dark-color);
 }
 
+.about img
+{
+    width: 100%;
+}
+
+.banner
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+}
+
 @media  (min-width: 1200px) 
 {
-    .portada
+    .portada, .about .portada
     {
         flex-direction: row;
         padding: 8rem 4rem 4rem 4rem;
+    }
+
+    .banner
+    {
+        flex-direction: row;
     }
 }

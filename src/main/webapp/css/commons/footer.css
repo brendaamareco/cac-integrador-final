@@ -16,7 +16,7 @@
 .footer-menu
 {
     width: 100%;
-    padding-bottom: 2rem;
+    padding: 2rem;
     display: flex;
     justify-content: space-evenly;
     border-bottom: 1px solid rgba(187, 187, 187, 0.301);
