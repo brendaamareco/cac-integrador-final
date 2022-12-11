@@ -14,8 +14,9 @@
 
 .about .portada
 {
-    background-color: #fafbfc;
+    padding-top: 2rem;
     flex-direction: column;
+    background-color: #fafbfc;
 }
 
 .portada h1

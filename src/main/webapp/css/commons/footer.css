@@ -1,7 +1,6 @@
 
 .footer
 {
-    margin-top: 2rem;
     padding: 4rem 2rem 1rem 2rem;
     border-top: 1px solid var(--lightest-gray-color);
     background-color: var(--dark-gray-color);
