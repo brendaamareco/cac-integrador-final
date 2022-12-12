@@ -47,14 +47,36 @@ a
 button
 {
     width: 100%;
+    padding: 24px;
     margin: 0px;
     border-radius: 4px;
-    color: white;
-    cursor: pointer;
-    transition: all 80ms ease-in-out 0s;
-    padding: 24px;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
+    transition: all 80ms ease-in-out 0s;
+}
+
+.btn-principal
+{
     border: 1px solid var(--main-color);
+    color: white;
     background-color: var(--main-color);
+}
+
+.btn-principal:hover
+{
+    background-color: var(--main-dark-color);
+}
+
+.btn-secundario
+{
+    background-color: white;
+    color: var(--main-color);
+    border: 3px solid var(--main-color);
+}
+
+.btn-secundario:hover
+{
+    color: var(--main-dark-color);
+    border-color: var(--main-dark-color);
 }

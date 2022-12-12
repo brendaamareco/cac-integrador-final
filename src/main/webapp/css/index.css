@@ -67,29 +67,6 @@
     gap: 1.2rem;
 }
 
-#btn-consultar-pedido
-{
-    background-color: white;
-    color: var(--main-color);
-    border: 3px solid var(--main-color);
-}
-
-#btn-ingresar-pedido:hover
-{
-    background-color: var(--main-dark-color);
-}
-
-#btn-consultar-pedido:hover
-{
-    color: var(--main-dark-color);
-    border-color: var(--main-dark-color);
-}
-
-.about img
-{
-    width: 100%;
-}
-
 .banner
 {
     display: flex;
