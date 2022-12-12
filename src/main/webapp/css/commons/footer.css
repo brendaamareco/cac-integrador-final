@@ -15,9 +15,11 @@
 .footer-menu
 {
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 0 4rem 2rem;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2.5rem;
     border-bottom: 1px solid rgba(187, 187, 187, 0.301);
 }
 
