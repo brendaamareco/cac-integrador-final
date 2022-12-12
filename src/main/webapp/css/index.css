@@ -6,7 +6,7 @@
 .portada
 {
     display: flex;
-    padding: 8rem 1rem 4rem 1rem;
+    padding: 20rem 1rem 4rem 1rem;
     flex-direction: column-reverse;
     justify-content: center;
     gap: 2rem;
@@ -85,11 +85,18 @@
     .portada, .about .portada
     {
         flex-direction: row;
-        padding: 8rem 4rem 4rem 4rem;
     }
 
     .banner
     {
         flex-direction: row;
+    }
+}
+
+@media (min-width: 578px)
+{
+    .portada
+    {
+        padding: 8rem 4rem 4rem 4rem;
     }
 }
