@@ -20,7 +20,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 2.5rem;
-    border-bottom: 1px solid rgba(187, 187, 187, 0.301);
+    border-bottom: 1px solid #bbbbbb4d;
 }
 
 .footer-col, .footer-col ul
