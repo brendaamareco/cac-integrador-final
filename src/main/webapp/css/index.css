@@ -6,10 +6,11 @@
 .portada
 {
     display: flex;
+    padding: 8rem 1rem 4rem 1rem;
     flex-direction: column-reverse;
     justify-content: center;
+    gap: 2rem;
     align-items: center;
-    padding: 8rem 1rem 4rem 1rem;
 }
 
 .about .portada
