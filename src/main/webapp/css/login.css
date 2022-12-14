@@ -5,3 +5,17 @@
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(242,103,22,1) 99%);
 }
+
+.form-section
+{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 69%, rgba(255,246,241,1) 71%, rgba(255,199,167,1) 85%, rgba(255,155,96,1) 93%, rgba(242,103,22,1) 100%);
+}
+
+@media (min-width: 992px)
+{
+    .form-section
+    {
+        background: rgb(255,255,255);
+    }
+}
