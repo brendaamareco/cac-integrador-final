@@ -45,6 +45,11 @@ a
     color: #353535;
 }
 
+.btn-group a
+{
+    width: 100%;
+}
+
 button
 {
     width: 100%;
