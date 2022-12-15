@@ -6,6 +6,9 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+import models.User;
+
 import java.io.IOException;
 
 import javax.sql.DataSource;
@@ -27,6 +30,15 @@ public class UserController extends HttpServlet
         super();
     }
 
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+    {
+    	if ( request.isRequestedSessionIdValid() )
+    		request.getRequestDispatcher("user.jsp").forward(request, response);
+
+    	else
+    		request.getRequestDispatcher("login.html").forward(request, response);
+    }
+    
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
 		String username = request.getParameter("username");
@@ -35,13 +47,18 @@ public class UserController extends HttpServlet
 		String password = request.getParameter("password");
 
 		userData = new UserData(dataSource);
-		if ( userData.getUser(email, password) != null)
+		User user = userData.getUser(email, password);
+		
+		if ( user != null )
 		{
-			response.getWriter().print("Login exitoso");
+			HttpSession session = request.getSession(true);
+			session.setMaxInactiveInterval(3600); 
+			session.setAttribute("user", user);
+			request.getRequestDispatcher("user.jsp").forward(request, response);
 		}
 		
 		else
-			response.getWriter().print("Usuario inválido. email:" + email + ", pass:" + password);
+			response.getWriter().print("Los datos son incorrectos. Inténtalo nuevamente");
 
 	}
 
