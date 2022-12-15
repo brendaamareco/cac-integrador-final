@@ -1,22 +1,27 @@
 package controllers;
 
+import jakarta.annotation.Resource;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.ServletOutputStream;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
-/**
- * Servlet implementation class UserController
- */
+import javax.sql.DataSource;
+
+import data.UserData;
+
+
 @WebServlet("/user")
 public class UserController extends HttpServlet 
 {
 	private static final long serialVersionUID = 1L;
-
+	
+	@Resource( name = "jdbc/codoacodo_final")
+	private DataSource dataSource;
+	private UserData userData;
+	
     public UserController() 
     {
         super();
@@ -27,12 +32,16 @@ public class UserController extends HttpServlet
 		String username = request.getParameter("username");
 		String server = request.getParameter("server");
 		String email = username + "@" + server;
-		
 		String password = request.getParameter("password");
 
-		PrintWriter output = response.getWriter();
-		output.print("email: " + email);
-		output.print("password: " + password);
+		userData = new UserData(dataSource);
+		if ( userData.userExists(email, password))
+		{
+			response.getWriter().print("Login exitoso");
+		}
+		
+		else
+			response.getWriter().print("Usuario inválido. email:" + email + ", pass:" + password);
 
 	}
 

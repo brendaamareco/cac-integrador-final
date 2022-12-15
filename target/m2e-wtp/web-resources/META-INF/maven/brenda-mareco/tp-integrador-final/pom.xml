@@ -41,6 +41,19 @@
      	 <artifactId>jakarta.xml.bind-api</artifactId>
      	 <version>4.0.0</version>
 	</dependency>
+	
+	<dependency>
+		<groupId>org.eclipse.jetty</groupId>
+		<artifactId>jetty-jndi</artifactId>
+		<version>12.0.0.alpha3</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>8.0.31</version>
+	</dependency>
+	
 </dependencies>
   <build>
     <plugins>
