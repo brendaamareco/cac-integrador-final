@@ -35,7 +35,7 @@ public class UserController extends HttpServlet
 		String password = request.getParameter("password");
 
 		userData = new UserData(dataSource);
-		if ( userData.userExists(email, password))
+		if ( userData.getUser(email, password) != null)
 		{
 			response.getWriter().print("Login exitoso");
 		}
