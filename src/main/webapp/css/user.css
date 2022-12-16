@@ -1,0 +1,16 @@
+@import "commons/commons.css";
+@import "commons/header.css";
+@import "commons/footer.css";
+
+.user-section
+{
+	padding-top: 18rem;
+}
+
+@media (min-width: 578px)
+{
+	.user-section
+	{
+		padding-top: 6rem;
+	}
+}
