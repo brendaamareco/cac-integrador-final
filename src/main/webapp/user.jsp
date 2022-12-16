@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="ISO-8859-1" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
     <%@ page import="models.User" %>
 
         <!DOCTYPE html>
@@ -33,8 +33,8 @@
                                 <li><a href="">Servicios</a>
                                     <ul class="toggle-menu">
                                         <li><a href="">Venta</a></li>
-                                        <li><a href="">Colocaci髇</a></li>
-                                        <li><a href="">Reparaci髇</a></li>
+                                        <li><a href="">Colocaci贸n</a></li>
+                                        <li><a href="">Reparaci贸n</a></li>
                                         <li><a href="">Pedidos</a>
                                             <ul class="toggle-menu">
                                                 <li><a href="user">Ingresar</a></li>
@@ -46,7 +46,7 @@
                                 <li><a href="">Acerca de</a>
                                     <ul class="toggle-menu">
                                         <li><a href="">Nosotros</a></li>
-                                        <li><a href="">Nuestra misi髇</a></li>
+                                        <li><a href="">Nuestra misi贸n</a></li>
                                         <li><a href="">Historia</a></li>
                                     </ul>
                                 </li>
@@ -61,16 +61,22 @@
                                 Usuario
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title"><%= user.getNombre() + " " + user.getApellido() %></h5>
-                                <p class="card-text"><%= user.getEmail() %></p>
+                                <h5 class="card-title">
+                                    <%= user.getNombre() + " " + user.getApellido() %>
+                                </h5>
+                                <p class="card-text">
+                                    <%= user.getEmail() %>
+                                </p>
                                 <div class="col-6 col-lg-2 mx-auto d-flex flex-column">
-				                    <a href="user"><button type="button" class="btn btn-outline-danger mb-2">Ingresar pedido</button>
-				                    </a>
-				                    <a href="user"><button type="button" class="btn btn-outline-info">Consultar pedido</button></a>
-				                </div>
+                                    <a href="user"><button type="button" class="btn btn-outline-danger mb-2">Ingresar
+                                            pedido</button>
+                                    </a>
+                                    <a href="user"><button type="button" class="btn btn-outline-info">Consultar
+                                            pedido</button></a>
+                                </div>
                             </div>
                             <div class="card-footer text-muted">
-                                
+
                             </div>
                         </div>
                     </div>
@@ -81,7 +87,7 @@
                                 <h4>Acerca de</h4>
                                 <ul>
                                     <li><a href="#">Nosotros</a></li>
-                                    <li><a href="#">Nuestra misi髇</a></li>
+                                    <li><a href="#">Nuestra misi贸n</a></li>
                                     <li><a href="#">Historia</a></li>
                                 </ul>
                             </div>
@@ -89,8 +95,8 @@
                                 <h4>Servicios</h4>
                                 <ul>
                                     <li><a href="#">Venta</a></li>
-                                    <li><a href="#">Colocaci髇</a></li>
-                                    <li><a href="#">Reparaci髇</a></li>
+                                    <li><a href="#">Colocaci贸n</a></li>
+                                    <li><a href="#">Reparaci贸n</a></li>
                                     <li><a href="user">Ingresar pedidos</a></li>
                                     <li><a href="user">Consultar pedidos</a></li>
                                 </ul>
